@@ -9,7 +9,6 @@ st.title("⚡ Rigging & Power Utility")
 
 # 2. Security Configuration
 # Ensure you have a .streamlit/secrets.toml file with GOOGLE_API_KEY = "your_key_here"
- st.write("DEBUG - keys found:", st.secrets.keys())
 try:
     api_key = st.secrets["GOOGLE_API_KEY"]
     genai.configure(api_key=api_key)
